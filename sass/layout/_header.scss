@@ -2,12 +2,12 @@
 	height: 95vh;
 	position: relative;
 
-	background-image:   linear-gradient(
-							to right bottom,
-							rgba($clr-primary-light, 0.8),
-							rgba($clr-primary-dark, 0.8)
-						),
-						url(../img/hero.jpg);
+	background-image: linear-gradient(
+		to right bottom,
+		rgba($clr-primary-light, 0.8),
+		rgba($clr-primary-dark, 0.8)
+		),
+		url(../img/hero.jpg);
 	background-size: cover;
 	background-position: top;
 

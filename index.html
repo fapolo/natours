@@ -1,100 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>Natours | Passeios incríveis para pessoas aventureiras</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__logo-box">
-                <img src="img/logo-white.png" alt="Logo" class="header__logo">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Natours | Passeios incríveis para pessoas aventureiras</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="img/logo-white.png" alt="Logo" class="header__logo" />
+      </div>
+
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">É lá fora</span>
+          <span class="heading-primary--sub">que a vida acontece</span>
+        </h1>
+        <a href="#tours" class="btn btn--white btn--animated"
+          >Descubra nossos passeios</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Aventuras incríveis na natureza</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Apaixone-se pela natureza
+            </h3>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+              incidunt, quam rem voluptatem labore consequatur quasi, ipsam
+              asperiores ipsum iste excepturi vel repudiandae corrupti accusamus
+              qui blanditiis et debitis!
+            </p>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              As maiores aventuras da sua vida
+            </h3>
+            <p class="paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+              id asperiores magni doloribus ducimus non vel reiciendis libero?
+            </p>
+            <a href="#" class="btn-text">Veja mais &rarr; </a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="img/nat-1-large.jpg"
+                alt="Foto 1"
+                class="composition__photo composition__photo--1"
+              />
+              <img
+                src="img/nat-2-large.jpg"
+                alt="Foto 2"
+                class="composition__photo composition__photo--2"
+              />
+              <img
+                src="img/nat-3-large.jpg"
+                alt="Foto 3"
+                class="composition__photo composition__photo--3"
+              />
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">É lá fora</span>
-                    <span class="heading-primary--sub">que a vida acontece</span>
-                </h1>
-                <a href="#" class="btn btn--white btn--animated">Descubra nossos passeios</a>
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-world"></i>
+              <h3 class="header-tertiary u-margin-bottom-small">
+                Explore o Mundo
+              </h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                pariatur maiores rerum obcaecati placeat magnam.
+              </p>
             </div>
-        </header>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-compass"></i>
+              <h3 class="header-tertiary u-margin-bottom-small">
+                Lugares Únicos
+              </h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                pariatur maiores rerum obcaecati placeat magnam.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-map"></i>
+              <h3 class="header-tertiary u-margin-bottom-small">
+                Naturezas Incríveis
+              </h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                pariatur maiores rerum obcaecati placeat magnam.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-heart"></i>
+              <h3 class="header-tertiary u-margin-bottom-small">
+                Vida Saudável
+              </h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                pariatur maiores rerum obcaecati placeat magnam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <main>
-            <section class="section-about">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">Aventuras incríveis na natureza</h2>
+      <section class="section-tours" id="tours">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Passeios em Destaque</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">
+                    Exploração Marítima
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>3 dias</li>
+                    <li>Até 30 pessoas</li>
+                    <li>2 guias de turismo</li>
+                    <li>Hotéis aconchegantes</li>
+                    <li>Dificuldade: Fácil</li>
+                  </ul>
                 </div>
-
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-small">Apaixone-se pela natureza</h3>
-                        <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, incidunt, quam rem voluptatem labore consequatur quasi, ipsam asperiores ipsum iste excepturi vel repudiandae corrupti accusamus qui blanditiis et debitis!
-                        </p>
-                        <h3 class="heading-tertiary u-margin-bottom-small">As maiores aventuras da sua vida</h3>
-                        <p class="paragraph">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore id asperiores magni doloribus ducimus non vel reiciendis libero?
-                        </p>
-                        <a href="#" class="btn-text">Veja mais &rarr; </a>
-                    </div>
-                    <div class="col-1-of-2">
-                        <div class="composition">
-                            <img src="img/nat-1-large.jpg" alt="Foto 1" class="composition__photo composition__photo--1">
-                            <img src="img/nat-2-large.jpg" alt="Foto 2" class="composition__photo composition__photo--2">
-                            <img src="img/nat-3-large.jpg" alt="Foto 3" class="composition__photo composition__photo--3">
-                        </div>
-                    </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Somente</p>
+                    <p class="card__price-value">$297</p>
+                  </div>
+                  <a href="#" class="btn btn--white">Comprar</a>
                 </div>
-            </section>
-
-            <section class="section-features">
-                <div class="row">
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-world"></i>
-                            <h3 class="header-tertiary u-margin-bottom-small">Explore o Mundo</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit pariatur maiores rerum obcaecati placeat magnam.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-compass"></i>
-                            <h3 class="header-tertiary u-margin-bottom-small">Lugares Únicos</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit pariatur maiores rerum obcaecati placeat magnam.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-map"></i>
-                            <h3 class="header-tertiary u-margin-bottom-small">Naturezas Incríveis</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit pariatur maiores rerum obcaecati placeat magnam.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-heart"></i>
-                            <h3 class="header-tertiary u-margin-bottom-small">Vida Saudável</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit pariatur maiores rerum obcaecati placeat magnam.
-                            </p>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">
+                    Escalada Florestal
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>7 dias</li>
+                    <li>Até 40 pessoas</li>
+                    <li>6 guias de turismo</li>
+                    <li>Acampamento em tendas</li>
+                    <li>Dificuldade: Médio</li>
+                  </ul>
                 </div>
-            </section>
-        </main>
-    </body>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Somente</p>
+                    <p class="card__price-value">$497</p>
+                  </div>
+                  <a href="#" class="btn btn--white">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">
+                    Aventura Congelante
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>5 dias</li>
+                    <li>Até 15 pessoas</li>
+                    <li>3 guias de turismo</li>
+                    <li>Acampamento em tendas</li>
+                    <li>Dificuldade: Difícil</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Somente</p>
+                    <p class="card__price-value">$897</p>
+                  </div>
+                  <a href="#" class="btn btn--white">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-center-text u-margin-top-big">
+          <a href="#tours" class="btn btn--green">Todos os Passeios</a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

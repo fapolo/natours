@@ -1,0 +1,198 @@
+.card {
+  // =-=-=-=-=-=-=-=-=-=
+  // FUNCIONALIDADES
+  // =-=-=-=-=-=-=-=-=-=
+  perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    width: 100%;
+    height: 50rem;
+    border-radius: 3px;
+    overflow: hidden; //para que as imagens respeitem o border-radius
+    box-shadow: 0 1.5rem 4rem rgba($clr-black, 0.15);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    //quando o card virar 180°, a parte de trás dele sumirá
+    //front some ao virar, back já começa escondido e aparece ao virar
+    backface-visibility: hidden;
+
+    transition: all 0.8s ease;
+
+    &--front {
+      background-color: $clr-white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $clr-secondary-light,
+          $clr-secondary-dark
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $clr-primary-light,
+          $clr-primary-dark
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $clr-tertiary-light,
+          $clr-tertiary-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // =-=-=-=-=-=-=-=-=-=
+  // ELEMENTOS
+  // =-=-=-=-=-=-=-=-=-=
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $clr-secondary-light,
+          $clr-secondary-dark
+        ),
+        url(../img/nat-5.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $clr-primary-light,
+          $clr-primary-dark
+        ),
+        url(../img/nat-6.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $clr-tertiary-light,
+          $clr-tertiary-dark
+        ),
+        url(../img/nat-7.jpg);
+    }
+  }
+
+  &__heading {
+    width: 75%;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $clr-white;
+
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+
+    //na quebra de linha, aplica cor e padding para cada linha,
+    //tratando cada linha de texto como um elemento diferente
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($clr-secondary-light, 0.85),
+        rgba($clr-secondary-dark, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($clr-primary-light, 0.85),
+        rgba($clr-primary-dark, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($clr-tertiary-light, 0.85),
+        rgba($clr-tertiary-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 2rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $clr-gray-light-2;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    width: 90%;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &__price-box {
+    color: $clr-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 300;
+  }
+}

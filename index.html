@@ -234,8 +234,7 @@
         </div>
       </section>
 
-      <div class="section section-stories">
-
+      <section class="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="img/video.mp4" type="video/mp4" />
@@ -252,12 +251,20 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="img/nat-8.jpg" alt="Cliente" class="story__image">
+              <img src="img/nat-8.jpg" alt="Cliente" class="story__image" />
               <figcaption class="story__caption">Clara Santos</figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">"O melhor final de semana de todos!"</h3>
-              <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo ducimus eveniet at a distinctio ipsum odit cum, temporibus totam? Ad eos maxime, et quaerat magnam corporis numquam possimus quam quos. Ad eos maxime, et quaerat magnam corporis numquam possimus quam quos.</p>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                "O melhor final de semana de todos!"
+              </h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                ducimus eveniet at a distinctio ipsum odit cum, temporibus
+                totam? Ad eos maxime, et quaerat magnam corporis numquam
+                possimus quam quos. Ad eos maxime, et quaerat magnam corporis
+                numquam possimus quam quos.
+              </p>
             </div>
           </div>
         </div>
@@ -265,19 +272,92 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="img/nat-9.jpg" alt="Cliente" class="story__image">
+              <img src="img/nat-9.jpg" alt="Cliente" class="story__image" />
               <figcaption class="story__caption">João Souza</figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">"Uma experiência completamente diferente."</h3>
-              <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo ducimus eveniet at a distinctio ipsum odit cum, temporibus totam? Ad eos maxime, et quaerat magnam corporis numquam possimus quam quos. Ad eos maxime, et quaerat magnam corporis numquam possimus quam quos.</p>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                "Uma experiência completamente diferente."
+              </h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                ducimus eveniet at a distinctio ipsum odit cum, temporibus
+                totam? Ad eos maxime, et quaerat magnam corporis numquam
+                possimus quam quos. Ad eos maxime, et quaerat magnam corporis
+                numquam possimus quam quos.
+              </p>
             </div>
           </div>
         </div>
         <div class="u-center-text u-margin-top-big">
           <a href="#" class="btn-text">Todas as histórias &rarr;</a>
         </div>
-      </div>
+      </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">
+                    Faça sua reserva!
+                  </h2>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    id="name"
+                    class="form__input"
+                    placeholder="Nome Completo"
+                    required
+                  />
+                  <label for="name" class="form__label">Nome Completo</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form__input"
+                    placeholder="E-mail"
+                    required
+                  />
+                  <label for="email" class="form__label">E-mail</label>
+                </div>
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      name="tour-size"
+                      id="small-tour"
+                      class="form__radio-input"
+                    />
+                    <label for="small-tour" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Até 5 pessoas
+                    </label>
+                  </div>
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      name="tour-size"
+                      id="large-tour"
+                      class="form__radio-input"
+                    />
+                    <label for="large-tour" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Mais de 5 pessoas
+                    </label>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <button class="btn btn--green">Continuar &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

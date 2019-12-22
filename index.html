@@ -16,21 +16,30 @@
     <title>Natours | Passeios incríveis para pessoas aventureiras</title>
   </head>
   <body>
-
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__hamburger">&nbsp;</span>
       </label>
       <div class="navigation__background">&nbsp;</div>
-      
+
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">Sobre a Natours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Benefícios</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Passeios em Destaque</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Histórias</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Faça sua Reserva</a></li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Sobre a Natours</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Benefícios</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Passeios em Destaque</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Histórias</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Faça sua Reserva</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -182,7 +191,7 @@
                     <p class="card__price-only">Somente</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Comprar</a>
+                  <a href="#popup" class="btn btn--white">Comprar</a>
                 </div>
               </div>
             </div>
@@ -212,7 +221,7 @@
                     <p class="card__price-only">Somente</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Comprar</a>
+                  <a href="#popup" class="btn btn--white">Comprar</a>
                 </div>
               </div>
             </div>
@@ -242,7 +251,7 @@
                     <p class="card__price-only">Somente</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Comprar</a>
+                  <a href="#popup" class="btn btn--white">Comprar</a>
                 </div>
               </div>
             </div>
@@ -444,5 +453,40 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Foto de viagem" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Foto de viagem" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Faça sua Reserva
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            IMPORTANTE &ndash; Por favor, leia os termos antes de fazer a
+            reserva.
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            volutpat luctus commodo. Phasellus congue elit dui. Sed gravida
+            velit leo. Nunc fringilla est eu ex rutrum, in viverra felis
+            dapibus. Integer ut est at augue eleifend consequat eu ut est.
+            Suspendisse purus magna, ultrices non pellentesque vitae, faucibus
+            sed tortor. Etiam nibh purus, molestie sit amet elementum a,
+            eleifend ac urna. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Etiam volutpat luctus commodo. Phasellus congue elit dui. Sed
+            gravida velit leo. Nunc fringilla est eu ex rutrum, in viverra felis
+            dapibus. Integer ut est at augue eleifend consequat eu ut est.
+            Suspendisse purus magna, ultrices non pellentesque vitae, faucibus
+            sed tortor. Etiam nibh purus, molestie sit amet elementum a,
+            eleifend ac urna.
+          </p>
+          <a href="#" class="btn btn--green">Reservar Agora</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,61 +1,78 @@
 .story {
-    width: 75%;
-    padding: 6rem;
-    padding-left: 9rem;
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba($clr-black, 0.1);
-    background-color: rgba($clr-white, 0.6);
-    border-radius: 3px;
+  width: 75%;
+  padding: 6rem;
+  padding-left: 9rem;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($clr-black, 0.1);
+  background-color: rgba($clr-white, 0.6);
+  border-radius: 3px;
 
-    transform: skewX(-12deg);
+  transform: skewX(-12deg);
 
-    &__shape {
-        width: 15rem;
-        height: 15rem;
-        float: left;
-        position: relative;
+  @include media(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
 
-        shape-outside: circle(50% at 50% 50%);
+  @include media(phone) {
+    transform: skewX(0);
+  }
 
-        clip-path: circle(50% at 50% 50%);
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    position: relative;
 
-        transform: translateX(-3rem) skewX(12deg);
+    shape-outside: circle(50% at 50% 50%);
+
+    clip-path: circle(50% at 50% 50%);
+
+    transform: translateX(-3rem) skewX(12deg);
+
+    @include media(phone) {
+      transform: translateX(-3rem) skewX(0);
     }
+  }
 
-    &__image {
-        height: 100%;
-        transition: all 0.5s;
+  &__image {
+    height: 100%;
+    transition: all 0.5s;
 
-        transform: translateX(-4rem) scale(1.4);
+    transform: translateX(-4rem) scale(1.4);
+  }
+
+  &__text {
+    transform: skewX(12deg);
+
+    @include media(phone) {
+      transform: skewX(0);
     }
+  }
 
-    &__text {
-        transform: skewX(12deg);
-    }
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: $clr-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
 
-    &__caption {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: $clr-white;
-        text-transform: uppercase;
-        font-size: 1.7rem;
-        text-align: center;
-        opacity: 0;
-        transition: all 0.5s;
-        backface-visibility: hidden;
+    transform: translate(-50%, 20%);
+  }
 
-        transform: translate(-50%, 20%);
-    }
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 
-    &:hover &__caption {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
-
-    &:hover &__image {
-        transform: translateX(-4rem) scale(1);
-        filter: blur(3px) brightness(70%);
-
-    }
+  &:hover &__image {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(70%);
+  }
 }

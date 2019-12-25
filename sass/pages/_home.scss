@@ -17,6 +17,10 @@
 
   transform: skewY(-7deg);
 
+  @include media(tab-port) {
+    padding: 10rem 0;
+  }
+
   & > * {
     transform: skewY(7deg);
   }
@@ -26,11 +30,19 @@
   background-color: $clr-gray-light-1;
   padding: 20rem 0;
   margin-top: -13vh;
+
+  @include media(tab-port) {
+    padding: 20rem 0 10rem 0;
+  }
 }
 
 .section-stories {
   padding: 15rem 0;
   position: relative;
+
+  @include media(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-book {
@@ -40,6 +52,10 @@
     $clr-primary-light,
     $clr-primary-dark
   );
+
+  @include media(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .book {
@@ -55,8 +71,35 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($clr-black, 0.15);
 
+  @include media(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($clr-white, 0.9) 0%,
+        rgba($clr-white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../img/nat-10.jpg);
+  }
+
+  @include media(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba($clr-white, 0.9) 0%,
+        rgba($clr-white, 0.9) 100%
+      ),
+      url(../img/nat-10.jpg);
+  }
+
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include media(tab-land) {
+      width: 65%;
+    }
+
+    @include media(tab-port) {
+      width: 100%;
+    }
   }
 }

@@ -4,9 +4,21 @@
   font-size: 1.4rem;
   color: $clr-gray-light-1;
 
+  @include media(tab-land) {
+    padding: 8rem 4rem;
+  }
+
+  @include media(tab-port) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include media(tab-port) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__logo {
@@ -55,5 +67,6 @@
   &__copyright {
     border-top: 1px solid $clr-gray-dark;
     padding-top: 2rem;
+    text-align: center;
   }
 }

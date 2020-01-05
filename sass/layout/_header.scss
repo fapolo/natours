@@ -7,11 +7,21 @@
       rgba($clr-primary-light, 0.8),
       rgba($clr-primary-dark, 0.8)
     ),
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  //imagem de fundo responsiva para maior qualidade quando telas maiores/mais dpi
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($clr-primary-light, 0.8),
+        rgba($clr-primary-dark, 0.8)
+      ),
+      url(../img/hero.jpg);
+  }
 
   @include media(phone) {
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

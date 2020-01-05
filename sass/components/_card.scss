@@ -198,8 +198,9 @@
 
   // =-=-=-=-=-=-=-=-=-=
   // MEDIA QUERY
+  // Ativa com o width, mas também caso o aparelho não tenha o efeito de hover (touch sem hover)
   // =-=-=-=-=-=-=-=-=-=
-  @include media(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     // =-=-=-=-=-=-=-=-=-=
     // Card precisa de um overhaul
     // Aqui,somente o que precisa ser alterado
